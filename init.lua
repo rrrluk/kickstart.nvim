@@ -842,8 +842,8 @@ require('lazy').setup({
 
 
 -- NOTE: muuda colorscheme siin
-vim.cmd.colorscheme 'gruvbox-material'
--- vim.cmd.colorscheme 'kanagawa'
+-- vim.cmd.colorscheme 'gruvbox-material'
+vim.cmd.colorscheme 'kanagawa'
 -- vim.cmd.colorscheme 'tokyonight-night'
 
 -- The line beneath this is called `modeline`. See `:help modeline`

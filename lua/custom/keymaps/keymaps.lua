@@ -19,4 +19,10 @@ return {
 
   -- See on see, et kui sa replaced midagi, siis paste register ei muutu
   vim.keymap.set("x", "p", [["_dP]]),
+
+  -- quickfix
+  vim.keymap.set('n', '<M-j>', ':cnext<CR>', { desc = 'Next quickfix' }),
+  vim.keymap.set('n', '<M-k>', ':cprev<CR>', { desc = 'Previous quickfix' }),
+  vim.keymap.set('n', '<leader>qc', ':cclose<CR>', { desc = 'Close quickfix' }),
+  vim.keymap.set('n', '<leader>qo', ':copen<CR>', { desc = 'Open quickfix' }),
 }
