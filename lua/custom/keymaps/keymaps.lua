@@ -25,4 +25,9 @@ return {
   vim.keymap.set('n', '<M-k>', ':cprev<CR>', { desc = 'Previous quickfix' }),
   vim.keymap.set('n', '<leader>qc', ':cclose<CR>', { desc = 'Close quickfix' }),
   vim.keymap.set('n', '<leader>qo', ':copen<CR>', { desc = 'Open quickfix' }),
+
+  -- background toggle
+  vim.keymap.set("n", "<leader>ub", ':exec &bg=="light"? "set bg=dark" : "set bg=light"<CR>', opts)
+
+
 }
