@@ -24,6 +24,9 @@ return {
         },
       },
     },
+      -- Theme for lazygit
+    lazygit = {
+    },
   },
   -- NOTE: Keymaps
   keys = {

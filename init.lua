@@ -846,7 +846,8 @@ require('lazy').setup({
 
 -- NOTE: muuda colorscheme siin
 -- vim.cmd.colorscheme 'gruvbox-material'
-vim.cmd.colorscheme 'kanagawa'
+vim.cmd.colorscheme 'gruvbox'
+-- vim.cmd.colorscheme 'kanagawa'
 -- vim.cmd.colorscheme 'catppuccin'
 -- vim.cmd.colorscheme 'e-ink'
 -- vim.cmd.colorscheme 'tokyonight-night'
