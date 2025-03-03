@@ -1,5 +1,6 @@
 --[[
 
+
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
@@ -542,6 +543,7 @@ require('lazy').setup({
         -- clangd = {},
         gopls = {},
         pyright = {},
+        shellcheck = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -717,6 +719,7 @@ require('lazy').setup({
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path' },
+          { name = "buffer" },
           { name = 'nvim_lsp_signature_help' },
         },
       }
@@ -844,11 +847,11 @@ require('lazy').setup({
 
 -- NOTE: muuda colorscheme siin
 -- vim.cmd.colorscheme 'gruvbox-material'
--- vim.cmd.colorscheme 'retrobox'
-vim.cmd.colorscheme 'kanagawa'
+-- vim.cmd.colorscheme 'gruvbox'
+-- vim.cmd.colorscheme 'kanagawa'
 -- vim.cmd.colorscheme 'catppuccin'
 -- vim.cmd.colorscheme 'e-ink'
--- vim.cmd.colorscheme 'tokyonight-night'
+vim.cmd.colorscheme 'tokyonight-night'
 -- vim.cmd.colorscheme 'rose-pine'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
