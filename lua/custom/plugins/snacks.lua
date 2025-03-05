@@ -9,8 +9,6 @@ return {
       -- your explorer configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
-    },
-    picker = {
       layout = {
       -- presets options : "default" , "ivy" , "ivy-split" , "telescope" , "vscode", "select" , "sidebar"
       -- override picker layout in keymaps function as a param below

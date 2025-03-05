@@ -28,7 +28,10 @@ return {
   vim.keymap.set('n', '<leader>qo', ':copen<CR>', { desc = 'Open quickfix' }),
 
   -- background toggle
-  vim.keymap.set("n", "<leader>ub", ':exec &bg=="light"? "set bg=dark" : "set bg=light"<CR>', opts)
+  vim.keymap.set("n", "<leader>ub", ':exec &bg=="light"? "set bg=dark" : "set bg=light"<CR>', opts),
+ 
+  -- terminal 
+  vim.keymap.set("n", "<leader>t", ':terminal<CR>', { desc = "Open terminal" }),
 
 
 }
