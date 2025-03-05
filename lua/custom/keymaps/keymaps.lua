@@ -32,7 +32,7 @@ return {
 
   -- terminal 
   -- vim.keymap.set("n", "<leader>t", ':terminal<CR>', { desc = "Open terminal" }),
-  vim.keymap.set("n", "<leader>to", function ()
+  vim.keymap.set("n", "<leader>ot", function ()
     vim.cmd.vnew()
     vim.cmd.term()
     vim.cmd.startinsert()
