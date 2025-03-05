@@ -32,13 +32,14 @@ return {
 
   -- terminal 
   -- vim.keymap.set("n", "<leader>t", ':terminal<CR>', { desc = "Open terminal" }),
-  vim.keymap.set("n", "<leader>t", function ()
+  vim.keymap.set("n", "<leader>to", function ()
     vim.cmd.vnew()
     vim.cmd.term()
     vim.cmd.startinsert()
     vim.cmd.wincmd("L") -- where to create the terminal "H,J,K,L"
     -- vim.api.nvim_win_set_height(0,10) -- what size
-  end)
+  end,
+    { desc = "Open terminal"})
 
 
 }
