@@ -29,9 +29,16 @@ return {
 
   -- background toggle
   vim.keymap.set("n", "<leader>ub", ':exec &bg=="light"? "set bg=dark" : "set bg=light"<CR>', opts),
- 
+
   -- terminal 
-  vim.keymap.set("n", "<leader>t", ':terminal<CR>', { desc = "Open terminal" }),
+  -- vim.keymap.set("n", "<leader>t", ':terminal<CR>', { desc = "Open terminal" }),
+  vim.keymap.set("n", "<leader>t", function ()
+    vim.cmd.vnew()
+    vim.cmd.term()
+    vim.cmd.startinsert()
+    vim.cmd.wincmd("L") -- where to create the terminal "H,J,K,L"
+    -- vim.api.nvim_win_set_height(0,10) -- what size
+  end)
 
 
 }

@@ -219,7 +219,8 @@ vim.api.nvim_create_autocmd('TermOpen', {
   callback = function()
     vim.opt.number = false
     vim.opt.relativenumber = false
-    vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { desc = 'Exit terminal insert mode' })
+    vim.opt.cursorline = true
+    -- vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { desc = 'Exit terminal insert mode' })
     vim.keymap.set("n", "<leader>bd", "<C-\\><C-n>:bd!<CR>", { buffer = true, desc = "Close terminal buffer" })
   end,
 })
